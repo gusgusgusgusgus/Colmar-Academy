@@ -1,0 +1,491 @@
+/* Transversal styles */
+html {
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #363332;
+  line-height: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.2rem;
+}
+
+
+/* Header styles*/
+.logo span {
+  color: #363332;
+  font-weight: 400;
+}
+
+#colmar{
+  color: black;
+  font-weight: 700;
+}
+
+header {
+  font-size: 32px;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav {
+  margin-right: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0 8px;
+  font-size: 1.25rem;
+  color: black;
+  font-weight: 300;
+}
+
+nav a:hover {
+  color: slategray;
+}
+
+header img {
+  height: 50px;
+  width: auto;
+}
+
+header .logo, nav {
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.mobilenavigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media only screen and (min-width: 481px) {
+  .mobilenavigation {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header .logo,
+  nav {
+    margin: 0;
+  }
+
+  header span {
+    display: none;
+  }
+
+  nav, .logo img {
+    display: none;
+  }
+
+  .logo {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+
+/* Banner section styles */
+.banner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: whitesmoke;
+  line-height: 2.5rem;
+}
+
+.bannertext p {
+  align-text: center;
+}
+
+.banner img {
+  width: 60%;
+  margin: 32px 24px;
+}
+
+.banner .bannertext {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2rem;
+  width: 30%;
+}
+
+.banner .bannertext h3 {
+  margin: 32px 0;
+  color: dimgray;
+}
+
+.banner .bannertext .button {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: dimgray;
+  font-weight: 700;
+  transition: background-color 750ms linear 100ms;
+}
+
+.banner .bannertext .button a {
+  text-decoration: none;
+  color: white;
+}
+
+.banner .bannertext .button:hover {
+  background-color: #363332;
+  border: solid 2px #363332;
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    display: inline-block;
+  }
+
+  .banner img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .banner .bannertext{
+    width: 100%;
+    margin: 32px 16px;
+  }
+
+  .banner .bannertext .button{
+    width: 90%;
+    margin-bottom: 32px;
+  }
+}
+
+
+/* Supporting section styles */
+.supporting {
+  display: flex;
+}
+
+.supporting .text h2 {
+  font-weight: 700;
+  color: #363332;
+}
+
+.supporting .text span {
+  font-size: 0.75rem;
+  color: dimgray;
+}
+
+.supporting .quote {
+  width: 60%;
+  margin: 32px 24px;
+  line-height: 2rem;
+}
+
+.supporting .quote .text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.supporting .quote .text p {
+  margin: 24px 0;
+}
+
+.supporting img {
+  width: 100%;
+  height: auto;
+  image-orientation: center;
+  overflow: hidden;
+}
+
+.supporting .menu {
+  width: 40%;
+  border-left: 2px solid whitesmoke;
+}
+
+.supporting .menu p {
+  margin: 8px 0;
+  line-height: 1.5rem;
+  color: darkgray;
+}
+
+.supporting .menu a {
+  color: royalblue;
+  line-height: 2.5rem;
+  text-decoration: none;
+}
+
+.supporting .entry:hover {
+  background-color: whitesmoke;
+  color: #363332;
+}
+
+.supporting .entry {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid whitesmoke;
+  transition: all 400ms linear;
+}
+
+.supporting .entry img {
+  width: 35%;
+  height: auto;
+  margin: 16px;
+}
+
+.supporting .entry div {
+  width: 65%;
+}
+
+
+
+@media only screen and (min-width: 480px) {
+  .supporting .menu .mobile {
+    display: none;
+  }
+  img .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 480px){
+  .quote,
+  img .desktop {
+    display: none;
+  }
+
+  .menu {
+    display: inline-block;
+  }
+
+  img .mobile {
+    width: 100%;
+    height: auto;
+    margin: none;
+  }
+
+  .supporting .menu .desktop {
+    display: none;
+  }
+
+  .supporting .menu .mobile {
+    margin: 0;
+  }
+
+  .supporting .menu {
+    width: 100%;
+  }
+
+  .supporting .menu .entry {
+    display: inline-block;
+    margin: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: auto;
+    border: none;
+  }
+
+  .supporting .entry .text {
+    width: 100%;
+  }
+
+  .supporting .menu .orientation {
+    margin-top: 16px;
+  }
+}
+
+
+/* Learn section styles */
+.learning {
+  background-color: whitesmoke;
+}
+
+.learning h2 {
+  font-weight: 700;
+  color: #363332;
+}
+
+.courses {
+  padding: 16px 48px;
+}
+
+.title h2 {
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+.courses .menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.course {
+  display: flex;
+  flex-flow: column wrap;
+  width: 30%;
+  margin: 16px 16px;
+  background-color: white;
+  transition: all 400ms linear;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.course h3 {
+  margin: 16px;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.course span {
+  display: inline-block;
+  margin: 8px 16px;
+  color: darkgray;
+}
+
+.course p {
+  margin: 0 16px 24px 16px;
+  color: darkgray;
+}
+
+.course:hover {
+  background-color: dimgray;
+  color: white;
+}
+@media only screen and (max-width: 480px) {
+  .content img,
+  .content span,
+  .content p {
+    display: none;
+  }
+  .learning {
+    background-color: white;
+  }
+  .course {
+    width: 100%;
+    background-color: whitesmoke;
+    color: #363332;
+    margin: 8px;
+  }
+  .course h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+/* Thesis section styles */
+.thesis h2 {
+  font-weight: 700;
+  color: #363332;
+}
+
+.thesis .content {
+  display: flex;
+}
+
+.thesis .video {
+  max-width: 60%;
+}
+
+.thesis .video h3 {
+  margin: 24px 24px 8px 24px;
+  font-weight: 400;
+  color: #363332;
+}
+
+.thesis .video p {
+  margin-bottom: 32px;
+  margin-left: 24px;
+  margin-right: 24px;
+  color: darkgray;
+}
+
+#video {
+  margin: 0 24px;
+}
+
+.thesis video {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.thesis .menu {
+  width: 40%;
+}
+
+.thesis .entry {
+  display: flex;
+  align-items: center;
+  transition: all 400ms linear;
+}
+
+.thesis .entry .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.thesis img {
+  margin: 16px;
+  width: 35%;
+  height: auto;
+}
+
+.thesis .entry:hover {
+  background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 480px) {
+  .thesis .videotext,
+  .thesis .menu {
+    display:none;
+  }
+  .thesis .video {
+    max-width: 100%;
+  }
+}
+
+
+/* Footer section styles */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: darkgray;
+  border-top: 1px solid whitesmoke;
+}
+
+.footer span, .footer .links {
+  margin: 16px 24px;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.footer .links a {
+  margin: 0 8px;
+}
